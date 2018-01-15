@@ -1,0 +1,14 @@
+{
+    "compilerOptions":{
+        "sourceMap": true  ,
+        "noImplicitAny": false, 
+        "alwaysStrict": false,
+        "strictNullChecks": false,
+        "target": "es5",
+        "noFallthroughCasesInSwitch": false
+    },
+
+    "files":[
+        "ts-src/app.ts"
+    ]
+}

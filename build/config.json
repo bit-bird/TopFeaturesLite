@@ -1,0 +1,71 @@
+{
+    "product" : "Ninja H2 Sx",
+    "responsive" : false,
+    "slides":[
+        {
+            "id" : "slide1",
+            "elementId" : "KAWASAKI DIFFERENCE",
+            "navLabel" : "Kawasaki Difference",
+            "class" : "Slide1",
+            "htmlElement" : "tf-slide1"
+        },
+
+        {
+            "id" : "slide2",
+            "elementId" : "POWER",
+            "navLabel" : "More Power",
+            "class" : "Slide2",
+            "htmlElement" : "tf-slide2"
+        },
+
+        {
+            "id" : "slide3",
+            "elementId" : "POWER",
+            "navLabel" : "Max Steering",
+            "class" : "TopFeatureSlide",
+            "htmlElement" : "tf-slide3"
+        }
+    ],
+
+    "videos" :[
+        {
+            "id" : "video1",
+            "src" : "https://media.kawasaki.com/contentstorage/4ed475a5-fd09-411b-be2c-2ad1da5954b7_H264_720.mp4",
+            "title" : "Ninja h2 Super Bike",
+            "elementId" : "NINJA H2: TECH"
+        }
+    ],
+
+    "manifest" :[
+        {
+            "id" : "vehicle",
+            "src" : "assets/s1/vehicle.png"
+        },
+
+        {
+            "id" : "graphic",
+            "src" : "assets/s1/title.png"
+        },
+
+        {
+            "id" : "bg1",
+            "src" : "assets/s2/bg1.jpg"
+        },
+
+        {
+            "id" : "bg2",
+            "src" : "assets/s2/bg2.jpg"
+        },
+
+        {
+            "id" : "bg3",
+            "src" : "assets/s2/bg3.jpg"
+        },
+
+        {
+            "id" : "bg4",
+            "src" : "assets/s2/bg4.jpg"
+        }
+    ]
+    
+}

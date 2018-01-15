@@ -1,0 +1,206 @@
+// include another .scss file from a sub-directory
+//@import './about/about.scss';
+//@import './fonts.scss';
+@import url("https://use.typekit.net/yfx0qzn.css");
+@import './globals.scss';
+@import './kawiPlayer';
+
+body {
+   font-family:$fira;
+   font-smoothing: antialiased;
+   -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility !important;
+}
+
+#app{
+    width:1230px;
+    height:575px;
+}
+
+#tf-stage{
+    width:100%;
+    height:100%;
+    position: relative;
+    background-color:red;
+    visibility: hidden;
+}
+
+#tf-slideContainer{
+    width:1170px;
+    height:510px;
+    background-color:black;
+    overflow:hidden;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+}
+
+#tf-nav{
+    top:477px;
+    width:1230 - 20;
+    height:46px;
+    left:10;
+   // background-color:green;
+    pointer-events: all;
+}
+
+.tf-navButton{
+    width:100%;
+    height:100%;
+    float:left;
+}
+
+.tf-navButtonLabel{
+    font-family: $alternate;
+    color:white;
+    font-size: 20px;
+    left:45px;
+    top:14px;
+    text-transform: uppercase;
+    position:absolute;
+}
+
+.tf-navButtonBg1{
+    position:absolute;
+    width:100%;
+    height:100%;
+    border: 1px solid #555555;
+    background: #343434; /* Old browsers */
+    background: -moz-linear-gradient(top, #343434 0%, #070707 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #343434 0%,#070707 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #343434 0%,#070707 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#343434', endColorstr='#070707',GradientType=0 ); /* IE6-9 */
+}
+
+.tf-navButtonBg2{
+    position:absolute;
+    width:100%;
+    height:100%;
+    border: 1px solid #04E004;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#04e004+0,00ac00+100 */
+    background: #04e004; /* Old browsers */
+    background: -moz-linear-gradient(top, #04e004 0%, #00ac00 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #04e004 0%,#00ac00 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #04e004 0%,#00ac00 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#04e004', endColorstr='#00ac00',GradientType=0 ); /* IE6-9 */
+}
+
+.tf-navButtonArrow{
+    position:absolute;
+    top:19px; left:25px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-color: transparent transparent transparent #66cc33;
+}
+
+.tf-Slide{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-color:white;
+}
+
+.slide1Bg{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f6f6f6+0,ffffff+50,b3b3b3+100 */
+background: #f6f6f6; /* Old browsers */
+background: -moz-linear-gradient(top, #f6f6f6 0%, #ffffff 50%, #b3b3b3 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #f6f6f6 0%,#ffffff 50%,#b3b3b3 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #f6f6f6 0%,#ffffff 50%,#b3b3b3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#b3b3b3',GradientType=0 ); /* IE6-9 */
+}
+
+.tf-watchVideoButton{
+    position: absolute;
+    font-family: $alternate;
+    text-transform: uppercase;
+    font-size: 20px;
+    left:27; top:-1;
+    font-weight: 600;
+    width:120px;
+}
+
+.tf-watchVideoIcon{
+    position:absolute;
+    width:18;
+    height:18;
+    border-radius: 50%;
+}
+
+.tf-watchVideoArrow{
+    position:absolute;
+    top:5px; left:7px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 4px 0 4px 5px;
+    border-color: transparent transparent transparent white;
+}
+
+.textContainer{
+    position:absolute;
+    h1{
+        font-family: $alternate;
+        color: $darkGrey;
+        text-transform: uppercase;
+        font-size: 28px;
+        clear: both;
+        float: left;
+        margin-bottom: 5px;
+        line-height: 35px;
+    }
+    span, ul{
+        font-family: $fira;
+        color: $darkGrey;
+        font-size: 12px;
+        clear: both;
+        float: left;
+        margin-bottom: 10px;
+        line-height: 17px
+    }
+
+    ul{
+        padding-left:17px;
+        padding-top:0px;
+        margin-top:0px;
+    }
+
+    ul li {
+        font-size:8px;
+        margin-bottom: 10px;
+        float:left;
+        color:$lightGrey;
+    }
+}
+
+#tf-videoPlayer{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0px;
+    background-color:black;
+}
+
+.abs{
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+
+.rel{
+    position:relative;
+    top:0px;
+    left:0px;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
+  }
